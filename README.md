@@ -2,7 +2,7 @@
 
 Ubuntu based docker image for running secure VNC server on browser.
 
-![winvnc screenshot](winvnc?raw=true "winvnc screenshot")
+![winvnc screenshot](winvnc.png?raw=true "winvnc screenshot")
 
 
 ## Pull the image
