@@ -28,4 +28,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/winvnc:latest, ${{ secrets.DOCKER_USERNAME }}/winvnc:${{ github.ref }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/winvnc:latest, ${{ secrets.DOCKER_USERNAME }}/winvnc:${{ github.event.release.tag_name }}
