@@ -13,7 +13,7 @@ docker pull eminmuhammadi/winvnc:latest
 
 # Run the container
 
-## No GPU
+## Simple usage
 ```bash
 docker run -it --rm \
     --name winvnc \
@@ -29,7 +29,7 @@ docker run -it --rm \
     eminmuhammadi/winvnc:latest
 ```
 
-## With GPU
+## Using gpu
 ```bash
 docker run -it --rm \
     --name winvnc \
