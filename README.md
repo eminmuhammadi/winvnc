@@ -24,5 +24,5 @@ docker run -it --rm \
     -e VNC_RESOLUTION=1920x1080 \
     -e VNC_DEPTH=24 \
     -e TZ=UTC \
-    winvnc:latest
+    eminmuhammadi/winvnc:latest
 ```
