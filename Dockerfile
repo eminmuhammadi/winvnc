@@ -9,12 +9,14 @@ ENV DEBIAN_FRONTEND=noninteractive
 ARG VNC_RESOLUTION=1920x1080
 ARG VNC_DEPTH=24
 ARG HTTP_PORT=8080
+ARG HTTPS_PORT=8443
 ARG TZ=UTC
 
 # Set environment variables
 ENV VNC_RESOLUTION=${VNC_RESOLUTION}
 ENV VNC_DEPTH=${VNC_DEPTH}
 ENV HTTP_PORT=${HTTP_PORT}
+ENV HTTPS_PORT=${HTTPS_PORT}
 ENV TZ=${TZ}
 
 # Install base packages
@@ -81,3 +83,4 @@ RUN chmod +x /usr/local/bin/startup.sh
 CMD ["bash", "/usr/local/bin/startup.sh"]
 
 EXPOSE ${HTTP_PORT}
+EXPOSE ${HTTPS_PORT}

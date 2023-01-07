@@ -7,7 +7,8 @@ mkdir -p /var/run/sshd
 /usr/bin/supervisord -c /root/supervisord.conf
 
 # Info 
-echo "winvnc running at https://0.0.0.0:$HTTP_PORT/vnc.html?password=$VNC_PASSWORD"
+echo "winvnc running at http://0.0.0.0:$HTTP_PORT/vnc.html?password=$VNC_PASSWORD"
+echo "winvnc running at https://0.0.0.0:$HTTPS_PORT/vnc.html?password=$VNC_PASSWORD"
 
 # Sleep forever
 while true; do sleep 1000; done
