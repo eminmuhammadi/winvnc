@@ -1,6 +1,6 @@
 # winvnc
 
-Ubuntu based docker image for running VNC server on browser.
+Ubuntu based docker image for running secure VNC server on browser.
 
 ## Building locally
 
