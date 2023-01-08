@@ -12,10 +12,11 @@ docker run -it --rm \
     --name winvnc \
     -p $HTTP_PORT:$HTTP_PORT/tcp \
     -p $HTTPS_PORT:$HTTPS_PORT/tcp \
-    --memory="1g" \
-    --memory-swap="2g" \
+    --memory="2g" \
+    --memory-swap="3g" \
     --cpus="1.0" \
     -e VNC_PASSWORD=$random_password \
     -e HTTP_PORT=$HTTP_PORT \
     -e HTTPS_PORT=$HTTPS_PORT \
+    --security-opt seccomp=unconfined \
     winvnc:latest
